@@ -113,17 +113,17 @@ func main() {
 	fmt.Println("----------Trie----------------")
 	t := newTrie()
 
-	// words := []string{"the", "a", "there", "their", "any", "thee"}
-	// for _, word := range words {
-	// 	t.Insert(word)
-	// }
-	// fmt.Println("there ->", t.Search("there"))
-	// fmt.Println("thor ->", t.Search("thor"))
-	// fmt.Println("thee ->", t.Search("thee"))
-	// fmt.Println("a ->", t.Search("a"))
-	// fmt.Println("three ->", t.Search("three"))
+	words := []string{"the", "a", "there", "their", "any", "thee"}
+	for _, word := range words {
+		t.Insert(word)
+	}
+	fmt.Println("there ->", t.Search("there"))
+	fmt.Println("thor ->", t.Search("thor"))
+	fmt.Println("thee ->", t.Search("thee"))
+	fmt.Println("a ->", t.Search("a"))
+	fmt.Println("three ->", t.Search("three"))
 
-	var words = []string{"i", "like", "sam", "samsung", "mobile"}
+	words = []string{"i", "like", "sam", "samsung", "mobile"}
 	key := "ilikesamsung"
 	for _, word := range words {
 		t.Insert(word)
