@@ -141,6 +141,7 @@ func main() {
 		suffix := s[i:]
 		t.Insert(suffix)
 	}
+
 	fmt.Printf("Substring count is :: %v\n", t.countUniqueSubstring(t.root))
 
 	words = []string{"a", "banana", "app", "appl", "ap", "apple", "apply"}
